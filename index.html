@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+        <div class="column">
+            <div class="input-section">
+                <label for="inputText">Texto a encriptar/desencriptar:</label>
+                <textarea id="inputText" rows="16" ></textarea>
+            </div>
+            <div class="buttons-section">
+                <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="output-section">
+                <label for="outputText">Resultado:</label>
+                <textarea id="outputText" rows="16" readonly placeholder="El resultado aparecerá aquí..."></textarea>
+                <div id="imageContainer">
+                    <img id="placeholderImage" src="Muñeco.png" alt="Placeholder Image" style="display:none; width:100%; max-width:300px;"/>
+                </div>
+            </div>
+            
+            <div class="copiar-section">
+                <button class="copiar" onclick="copiarTexto()">Copiar Texto</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por: Hugo Saa-2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
